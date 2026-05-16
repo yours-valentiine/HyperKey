@@ -1,0 +1,23 @@
+product:
+  type: lib
+  platforms: [ jvm, android ]
+
+dependencies:
+  - $compose.foundation
+  - $compose.material3
+
+dependencies@jvm:
+  - $compose.desktop.currentOs
+
+settings:
+  compose:
+    enabled: true
+  kotlin:
+    version: 2.3.21
+    allWarningsAsErrors: true
+  jvm:
+    release: 17
+  android:
+    minSdk: 24
+    compileSdk: 36
+    namespace: io.github.yoursvalentiine
